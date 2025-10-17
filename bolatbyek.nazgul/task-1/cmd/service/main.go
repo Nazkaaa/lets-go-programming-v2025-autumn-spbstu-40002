@@ -1,30 +1,35 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
+	"os"
 )
 
 func main() {
-	var a, b float64
-	_, err := fmt.Scan(&a)
-	if err != nil {
+	in := bufio.NewReader(os.Stdin)
+	var a, b int
+	var op string
+
+	// Read first operand
+	if _, err := fmt.Fscan(in, &a); err != nil {
 		fmt.Println("Invalid first operand")
 		return
 	}
 
-	_, err = fmt.Scan(&b)
-	if err != nil {
+	// Read second operand
+	if _, err := fmt.Fscan(in, &b); err != nil {
 		fmt.Println("Invalid second operand")
 		return
 	}
 
-	var action string
-	_, err = fmt.Scan(&action)
-	if err != nil {
+	// Read operator
+	if _, err := fmt.Fscan(in, &op); err != nil {
+		fmt.Println("Invalid operation")
 		return
 	}
 
-	switch action {
+	switch op {
 	case "+":
 		fmt.Println(a + b)
 	case "-":
@@ -34,10 +39,11 @@ func main() {
 	case "/":
 		if b == 0 {
 			fmt.Println("Division by zero")
-		} else {
-			fmt.Println(a / b)
+			return
 		}
+		fmt.Println(a / b)
 	default:
 		fmt.Println("Invalid operation")
 	}
 }
+
