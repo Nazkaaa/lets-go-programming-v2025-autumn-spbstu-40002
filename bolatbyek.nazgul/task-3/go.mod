@@ -1,4 +1,4 @@
-module lets-go-programming-v2025-autumn-spbstu-40002
+module bolatbyek.nazgul/task-3
 
 go 1.21
 

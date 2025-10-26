@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"strings"
 
-	"lets-go-programming-v2025-autumn-spbstu-40002/internal/cbr"
+	"bolatbyek.nazgul/task-3/internal/cbr"
 )
 
 type CurrencyOutput struct {

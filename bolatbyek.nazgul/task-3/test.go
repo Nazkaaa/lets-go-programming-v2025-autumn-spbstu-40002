@@ -5,9 +5,9 @@ import (
 	"os"
 	"path/filepath"
 
-	"lets-go-programming-v2025-autumn-spbstu-40002/internal/cbr"
-	"lets-go-programming-v2025-autumn-spbstu-40002/internal/convert"
-	"lets-go-programming-v2025-autumn-spbstu-40002/internal/output"
+	"bolatbyek.nazgul/task-3/internal/cbr"
+	"bolatbyek.nazgul/task-3/internal/convert"
+	"bolatbyek.nazgul/task-3/internal/output"
 )
 
 func main() {
